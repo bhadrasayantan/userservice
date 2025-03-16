@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: userservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000/realms/development
+          jwks_uri: http://localhost:9000/realms/development/protocol/openid-connect/certs
